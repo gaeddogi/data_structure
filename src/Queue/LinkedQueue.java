@@ -26,9 +26,7 @@ public class LinkedQueue<E> implements Queue<E> {
 
     public LinkedQueue() {
         this.size = 0;
-        this.head = null; //큐 선언시에 미리 head를 할당하는게 좋은가? 아님 null? 일단 큐를 선언한 거니까 할당하는게 좋은거 같다.
-                            // 근데 할당해도 마지막 요소까지 모두 삭제하면 결국 head null 됌
-                            //아니지 다 개소리고 new 선언하면 힙에 당연히 할당되는거잖아
+        this.head = null;
         this.tail = null;
     }
 

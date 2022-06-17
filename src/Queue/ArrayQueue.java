@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 
 public class ArrayQueue<E> implements Queue<E> {
 
-    private static final int DEFAULT_CAPACITY = 64; // static으로 선언해야하는 것인가? 그 이유는?
+    private static final int DEFAULT_CAPACITY = 64; // 상수라 static final
     private int size; // 요소의 크기(front 안 침)
     private int front; // 시작 인덱스
     private int rear; // 끝 인덱스
