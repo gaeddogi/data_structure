@@ -29,7 +29,7 @@ public class Main {
         System.out.println(a.hashCode());
         System.out.println(b.hashCode());
 
-        //test
+        //test test..
 
         //hashCode()는 주소값을 기반으로 다이제스트를 생성하는데
         //기본 자료형(Primitive Type) String, Integer, Double..... 등은 내부적으로
