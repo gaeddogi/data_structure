@@ -2,7 +2,7 @@ package Queue;
 
 import Interface.Queue;
 
-public class LinkedDequeue<E> implements Queue<E> {
+public class LinkedDeque<E> implements Queue<E> {
     // 양뱡향으로 삽입, 삭제가 가능한 큐, 연결리스트로 구현
     // 연결리스트(단방향)는 앞/뒤 삽입 시 시간복잡도 O(1)
     // 삭제는 앞 O(1) 뒤는 바로 전 노드를 찾아야 하므로 O(n)
@@ -35,7 +35,7 @@ public class LinkedDequeue<E> implements Queue<E> {
     private Node tail;
     private int size;
 
-    public LinkedDequeue() {
+    public LinkedDeque() {
         this.head = null;
         this.tail = null;
         this.size = 0;

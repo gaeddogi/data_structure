@@ -2,7 +2,7 @@ package Queue;
 
 import Interface.Queue;
 
-public class ArrayDequeue<E> implements Queue<E> {
+public class ArrayDeque<E> implements Queue<E> {
 
     private static final int DEFAULT_CAPACITY = 64;
     private int size;
@@ -10,14 +10,14 @@ public class ArrayDequeue<E> implements Queue<E> {
     private int rear;
     private Object[] arr;
 
-    public ArrayDequeue() {
+    public ArrayDeque() {
         this.size = 0;
         this.front = 0;
         this.rear = 0;
         this.arr = new Object[DEFAULT_CAPACITY];
     }
 
-    public ArrayDequeue(int capacity) {
+    public ArrayDeque(int capacity) {
         this.size = 0;
         this.front = 0;
         this.rear = 0;

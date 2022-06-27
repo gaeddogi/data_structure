@@ -31,7 +31,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
         Object[] newArr = new Object[capacity];
         for (int i = 1, j = front + 1; i <= size; i++, j++) {
-            newArr[1] = arr[j % currCapacity];
+            newArr[i] = arr[j % currCapacity];
         }
 
         front = 0;
@@ -45,7 +45,7 @@ public class ArrayQueue<E> implements Queue<E> {
     @Override
     public boolean offer(Object o) {
 
-        if ((rear + 1) % arr.length == front) { // size == arr.length - 1보다 직관적이라서?
+        if ((rear + 1) % arr.length == front) { // size + 1== arr.length - 1보다 직관적이라서?
             resize(arr.length * 2);
         }
 
@@ -72,7 +72,7 @@ public class ArrayQueue<E> implements Queue<E> {
         size--;
 
         if (arr.length > DEFAULT_CAPACITY && size < arr.length / 4) {
-            resize(Math.max(DEFAULT_CAPACITY, arr.length) / 2);
+            resize(Math.max(DEFAULT_CAPACITY, arr.length / 2));
         }
 
         return e;
