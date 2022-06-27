@@ -30,7 +30,7 @@ public interface Set<E> {
      * @param e 확인할 요소
      * @return 있으면 true, else false
      */
-    boolean contains(E e);
+    //boolean contains(E e);
 
     /**
      * 해당 객체와 현재 집합이 같은지 여부를 반환합니다.
@@ -45,7 +45,7 @@ public interface Set<E> {
      *
      * @return 비어있으면 true, else false
      */
-    boolean isEmpty();
+    //boolean isEmpty();
 
     /**
      * 집합 요소 개수를 반환합니다.
@@ -53,12 +53,12 @@ public interface Set<E> {
      *
      * @return 집합 요소 개수 반환
      */
-    int size();
+    //int size();
 
     /**
      * 집합의 모든 요소를 제거합니다.
      */
-    void clear();
+    //void clear();
 
 
 }

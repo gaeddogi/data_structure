@@ -200,6 +200,7 @@ public class LinkedHashSet<E> implements Set<E> {
             curr = curr.next;
         }
 
+
         return (E) removeNode;
     }
 }

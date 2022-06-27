@@ -159,23 +159,4 @@ public class HashSet<E> implements Set<E> {
         return (E) removeNode;
     }
 
-    @Override
-    public boolean contains(E e) {
-        return false;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public int size() {
-        return size;
-    }
-
-    @Override
-    public void clear() {
-
-    }
 }
