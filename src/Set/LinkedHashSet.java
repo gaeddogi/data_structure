@@ -12,7 +12,6 @@ public class LinkedHashSet<E> implements Set<E> {
         Node prevLink;
         Node nextLink;
 
-
         public Node(E key, int hash, Node next) {
             this.key = key;
             this.hash = hash;
