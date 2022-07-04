@@ -105,17 +105,17 @@ public class StackCalculator {
     }
 
     public static Double postfixCalculator(String postfix) {
-        Stack<Integer> stack = new Stack();
+        Stack stack = new Stack();
 
         for (int i = 0; i < postfix.length(); i++) {
             char x = postfix.charAt(i);
             //숫자
             if (Character.isDigit(x)) {
-                stack.push(Integer.parseInt(String.valueOf(x)));
+                stack.push(x);
             }
             else {
-                int b = stack.pop();
-                int a = stack.pop();
+                double b = Double.valueOf(stack.pop().toString());
+                double a = Double.valueOf(stack.pop().toString());
 
                 switch (x) {
                     case '+':
@@ -133,6 +133,6 @@ public class StackCalculator {
                 }
             }
         }
-        return Double.valueOf(stack.pop());
+        return Double.valueOf(stack.pop().toString());
     }
 }
