@@ -1,7 +1,6 @@
-package Queue;
+package queue;
 
 import Interface.Queue;
-import list.LinkedList_doubly;
 
 public class LinkedQueue<E> implements Queue<E> {
     private static class Node<E> {
@@ -74,6 +73,10 @@ public class LinkedQueue<E> implements Queue<E> {
         }
 
         return head.data;
+    }
+
+    public boolean isEmpty() {
+        return size <= 0;
     }
 
     @Override
